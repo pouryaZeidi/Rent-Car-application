@@ -1,4 +1,6 @@
 import HeroSection from "@/components/HeroSection";
+import Poster from "@/components/Poster";
+import CarCards from "@/components/staibleCars/CarCards";
 import localFont from "next/font/local";
 
 const geistSans = localFont({
@@ -19,6 +21,8 @@ export default function Home() {
     >
       <main className="">
         <HeroSection/>
+        <Poster/>
+        <CarCards/>
       </main>
 
       
