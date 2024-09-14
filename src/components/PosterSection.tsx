@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Button from './Button'
 
-const Poster = () => {
+const PosterSection = () => {
   // Animation variants
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -77,4 +77,4 @@ const Poster = () => {
   )
 }
 
-export default Poster
+export default PosterSection

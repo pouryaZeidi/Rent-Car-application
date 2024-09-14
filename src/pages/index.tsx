@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import Poster from "@/components/Poster";
+import PosterSection from "@/components/PosterSection";
 import CarCards from "@/components/staibleCars/CarCards";
 import localFont from "next/font/local";
 
@@ -21,7 +21,7 @@ export default function Home() {
     >
       <main className="">
         <HeroSection/>
-        <Poster/>
+        <PosterSection/>
         <CarCards/>
       </main>
 

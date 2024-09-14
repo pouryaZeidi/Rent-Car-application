@@ -22,10 +22,10 @@ const Navbar = () => {
 
       <div className='hidden md:flex w-full h-[40px] items-center justify-between rounded-md p-12 py-15 backdrop-blur-sm'>
         <img src="/Logo.svg" alt="Logo" className='w-[85px] h-[85px] rounded-full' />
-        <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl hover:scale-125 bg-blue-600 p-3 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
+        <Link href={'/signin'} className='text-[11px] lg:text-[14px] rounded-2xl hover:scale-125 bg-blue-600 p-3 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
           SIGN IN
         </Link>
-        <Link href={'/'} className='text-[12px] lg:text-[15px] rounded-2xl hover:scale-125 bg-blue-600 p-3 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
+        <Link href={'/signup'} className='text-[12px] lg:text-[15px] rounded-2xl hover:scale-125 bg-blue-600 p-3 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
           SIGN UP
         </Link>
         <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
