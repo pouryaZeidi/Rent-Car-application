@@ -1,41 +1,80 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import InputComponent from '@/components/signincomponents/InputComponent';
 import React from 'react';
+import { useRouter } from 'next/router'; // Import useRouter
 
-const signup = () => {
+const Signup = () => {
+  const router = useRouter(); // Initialize useRouter
+
+  // Function to handle navigation to the previous page
+  const handleBackClick = () => {
+    router.back(); // Navigate back to the previous page
+  };
+
   return (
     <div
-      className="w-full h-[100vh] flex justify-center items-center"
+      className="w-full h-screen flex flex-col justify-center items-center px-4"
       style={{
-        backgroundImage: "url('/Road.jpg')",
+        backgroundImage: "url('/Road1.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <div className="w-[80%] h-[70vh] m-auto backdrop-blur-sm border p-8">
-        <h1 className="font-bold text-4xl text-white mb-6">SIGN IN</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-         
-          <InputComponent label={'Full name'} placeholder={'Type your name'} type={'text'} value={''} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
-                      throw new Error('Function not implemented.');
-                  } } />
-          <InputComponent label={'E-mail'} placeholder={'Type your email'} type={'email'} value={''} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
-                      throw new Error('Function not implemented.');
-                  } } />
-          <InputComponent label={'Password'} placeholder={'Password'} type={'password'} value={''} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
-                      throw new Error('Function not implemented.');
-                  } } />
-          <InputComponent label={'Phone number'} placeholder={'Type your phone number'} type={'tel'} value={''} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
-                      throw new Error('Function not implemented.');
-                  } } />
-          <InputComponent label={'Your birthday'} placeholder={'Type your birthday'} type={'date'} value={''} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
-                      throw new Error('Function not implemented.');
-                  } } />
+      {/* دیو اصلی که حالت بلور دارد */}
+      <div className="w-full max-w-md p-6 backdrop-blur-sm border rounded-lg  bg-opacity-80 h-auto max-h-[90vh] overflow-y-auto">
+        {/* دکمه بازگشت */}
+        <button
+          onClick={handleBackClick}
+          className="mb-4 p-2 bg-blue-500 text-white rounded-3xl hover:bg-gray-700"
+        >
+          Back
+        </button>
+
+        <h1 className="font-bold text-3xl md:text-4xl text-gray-800 mb-6">SIGN UP</h1>
+
+        <div className="space-y-4">
+          <InputComponent
+            label={'Full name'}
+            placeholder={'Type your name'}
+            type={'text'}
+            value={''}
+            onChange={() => {}}
+          />
+          <InputComponent
+            label={'E-mail'}
+            placeholder={'Type your email'}
+            type={'email'}
+            value={''}
+            onChange={() => {}}
+          />
+          <InputComponent
+            label={'Password'}
+            placeholder={'Password'}
+            type={'password'}
+            value={''}
+            onChange={() => {}}
+          />
+          <InputComponent
+            label={'Phone number'}
+            placeholder={'Type your phone number'}
+            type={'tel'}
+            value={''}
+            onChange={() => {}}
+          />
+          <InputComponent
+            label={'Your birthday'}
+            placeholder={'Type your birthday'}
+            type={'date'}
+            value={''}
+            onChange={() => {}}
+          />
+          <button className='w-full border bg-blue-500 p-4 text-2xl rounded-3xl hover:text-blue-500 hover:bg-orange-500 border-orange-700 font-bold'>
+            SIGN UP
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default signup;
+export default Signup;
