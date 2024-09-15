@@ -28,7 +28,7 @@ const Navbar = () => {
         <Link href={'/signup'} className='text-[12px] lg:text-[15px] rounded-2xl hover:scale-125 bg-blue-600 p-3 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
           SIGN UP
         </Link>
-        <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
+        <Link href={'/aboutus'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
           ABOUT US
         </Link>
         <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
@@ -63,13 +63,13 @@ const Navbar = () => {
               &times; 
             </button>
           </div>
-          <Link href='/' className='block py-2 px-4 text-lg hover:bg-blue-500 rounded w-full text-center text-blue-900'>
+          <Link href='/signin' className='block py-2 px-4 text-lg hover:bg-blue-500 rounded w-full text-center text-blue-900'>
           SIGN IN
           </Link>
-          <Link href='/' className='block py-2 px-4 text-lg hover:bg-blue-500 rounded w-full text-center text-blue-900'>
+          <Link href='/signup' className='block py-2 px-4 text-lg hover:bg-blue-500 rounded w-full text-center text-blue-900'>
           SIGN UP
           </Link>
-          <Link href='/' className='block py-2 px-4 text-lg hover:bg-blue-500 rounded w-full text-center text-blue-900'>
+          <Link href='/aboutus' className='block py-2 px-4 text-lg hover:bg-blue-500 rounded w-full text-center text-blue-900'>
             ABOUT US
           </Link>
           <Link href='/' className='block py-2 px-4 text-lg hover:bg-blue-500 rounded w-full text-center text-blue-900'>
