@@ -9,7 +9,7 @@ const MenuIcone = ({onclick}:HamburgerProps) => {
   return (
     <>
       <TiThMenuOutline
-        className='text-5xl text-orange-500 hover:text-blue-500 cursor-pointer z-50'  
+        className='text-3xl text-orange-500 hover:text-blue-500 cursor-pointer z-50'  
         onClick={onclick}
       />
     </>

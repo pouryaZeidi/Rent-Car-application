@@ -2,8 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import Link from 'next/link';
-import MenuIcone from './icones/MenuIcone';
-import HomeIcone from './icones/HomeIcone';
+import MenuIcone from '../icones/MenuIcone';
+import HomeIcone from '../icones/HomeIcone';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,26 +20,26 @@ const Navbar = () => {
     <>
         {/* {navbar on md and lg} */}
 
-      <div className='hidden md:flex w-full h-[40px] items-center justify-between rounded-md p-12 py-15 backdrop-blur-sm'>
+      <div className='hidden md:flex w-full h-[40px] items-center justify-between rounded-md p-12 py-15 '>
         <img src="/Logo.svg" alt="Logo" className='w-[85px] h-[85px] rounded-full' />
-        <Link href={'/signin'} className='text-[11px] lg:text-[14px] rounded-2xl hover:scale-125 bg-blue-600 p-3 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
-          SIGN IN
-        </Link>
-        <Link href={'/signup'} className='text-[12px] lg:text-[15px] rounded-2xl hover:scale-125 bg-blue-600 p-3 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
-          SIGN UP
-        </Link>
-        <Link href={'/aboutus'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
-          ABOUT US
-        </Link>
-        <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
-          PRICING
-        </Link>
-        <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
+        <div className='w-[60%] flex justify-between'>
+        <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-2 transition ease-in-out duration-200 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
           CUSTOMERS
         </Link>
-        <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-3 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
-          FUTURE RENTAL VEHICLES
+        <Link href={'/aboutus'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 transition ease-in-out duration-200 p-2 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
+          ABOUT US
         </Link>
+        <Link href={'/'} className='text-[11px] lg:text-[14px] rounded-2xl bg-orange-600 p-2 transition ease-in-out duration-200 hover:bg-blue-600 hover:text-blue-50 text-blue-800 font-bold'>
+          PRICING
+        </Link>
+        <Link href={'/signin'} className='text-[11px] lg:text-[14px] rounded-2xl hover:scale-110 transition ease-in-out duration-200 bg-blue-600 p-2 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
+          SIGN IN
+        </Link>
+        <Link href={'/signup'} className='text-[12px] lg:text-[15px] rounded-2xl hover:scale-110 transition ease-in-out duration-200 bg-blue-600 p-2 hover:bg-orange-600 hover:text-blue-800 text-blue-50 font-bold'>
+          SIGN UP
+        </Link>
+        </div>
+
       </div>
 
         {/* {Menu on responsive under md} */}

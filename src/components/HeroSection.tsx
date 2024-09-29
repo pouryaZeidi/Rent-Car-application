@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 import Button from './Button';
 
 const HeroSection = () => {

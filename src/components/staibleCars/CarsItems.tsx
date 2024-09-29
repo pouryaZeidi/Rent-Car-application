@@ -21,7 +21,7 @@ const CarsItems = ({ txt1, txt2, txt3, src, hoverSrc }: carCardsprops) => {
       <img 
         src={isHovered ? hoverSrc : src} 
         alt="Car Image" 
-        className='w-[90%] h-[60%] mt-3 object-cover rounded-2xl hover:scale-110 transition-opacity cursor-pointer duration-700 ease-in-out'
+        className='w-[90%] h-[60%] mt-3 object-cover rounded-2xl hover:scale-105  hover:transition-opacity cursor-pointer hover:duration-700 hover:ease-in-out'
       />
       <div className='flex flex-col justify-start w-full h-[40%]  p-2'>
         <h1 className='text-[15px] bg-white p-[4px] rounded mb-1 hover:text-blue-700 cursor-pointer'>Model: {txt1}</h1>

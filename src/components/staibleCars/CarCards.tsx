@@ -4,7 +4,7 @@ import CarsItems from './CarsItems';
 const CarCards = () => {
   return (
     <div 
-      className='w-full h-auto p-4 flex flex-wrap justify-start gap-6 bg-cover bg-center'
+      className='w-full h-auto p-4 flex flex-wrap justify-start gap-6 hover:transition ease-in-out duration-200 bg-cover bg-center'
       style={{ backgroundImage: 'url(/Backgroundcards.jpg)' }}
     >
       <CarsItems txt1={'Lamborgini'} txt2={'1500'} txt3={'•  AVAILABLE'} src='https://images.pexels.com/photos/12926079/pexels-photo-12926079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' hoverSrc='https://images.pexels.com/photos/39855/lamborghini-brno-racing-car-automobiles-39855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
