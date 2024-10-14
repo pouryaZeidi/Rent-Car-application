@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import PosterSection from "@/components/PosterSection";
 import CarCards from "@/components/staibleCars/CarCards";
@@ -23,6 +24,7 @@ export default function Home() {
         <HeroSection/>
         <PosterSection/>
         <CarCards/>
+        <Footer/>
       </main>
 
       
